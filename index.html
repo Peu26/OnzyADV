@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onzy ADV | Advocacia Civil, Trabalhista e Empresarial</title>
+    <meta name="description" content="Escritório Onzy ADV — especialistas em Direito Civil, Trabalhista e Empresarial. Atuação digital e nacional." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bg-primary': '#050507', // Deep dark navy/black
+              'bg-card': '#0f0f12',
+              'bg-card-hover': '#16161a',
+              'accent-gold': '#dcc48a', // The specific beige/gold from reference
+              'accent-gold-light': '#e6d0a0',
+              'accent-gold-dark': '#bfa060',
+              'text-primary': '#f0ece4',
+              'text-muted': '#9ca3af',
+              'border-card': 'rgba(220, 196, 138, 0.1)',
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            animation: {
+              'marquee': 'marquee 25s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            },
+            borderRadius: {
+              'arch': '200px 200px 0 0',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg-primary: #050507;
+        --accent-gold: #dcc48a;
+      }
+      
+      body {
+        background-color: var(--bg-primary);
+        color: #f0ece4;
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* Arch Mask Utility */
+      .mask-arch {
+        mask-image: radial-gradient(circle at center top, black 50%, black 100%);
+        border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #dcc48a;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "gsap/": "https://esm.sh/gsap@^3.14.2/",
+        "gsap": "https://esm.sh/gsap@^3.14.2"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
