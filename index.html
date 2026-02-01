@@ -98,5 +98,7 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- CRITICAL FIX: Link the entry point script so Vercel/Vite can build and run the app -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
